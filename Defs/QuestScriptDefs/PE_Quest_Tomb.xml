@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <root Class="RimWorld.QuestGen.QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Message">
+          <messageType>PositiveEvent</messageType>
+          <text>The location of a profaned tomb has been discovered in the vicinity.</text>
+        </li>
+        <li Class="QuestEditor_Library.QuestNode_RandomCustomMap">
+          <tags />
+          <datas>
+            <li>
+              <key>PE_ProfandedTombI</key>
+              <value>0.5</value>
+            </li>
+            <li>
+              <key>PE_ProfandedTombII</key>
+              <value>0.5</value>
+            </li>
+			<li>
+              <key>BotchJob_PE_ProfanedTomb</key>
+              <value>0.5</value>
+            </li>
+			<li>
+              <key>BotchJob_PE_ProfanedTombII</key>
+              <value>0.5</value>
+            </li>
+          </datas>
+          <buffer>5</buffer>
+          <bufferMin>10</bufferMin>
+          <siteIconPath>World/WorldObjects/ProfanedFactionIcon</siteIconPath>
+          <expandingIconPath>World/WorldObjects/ProfanedFactionIcon</expandingIconPath>
+          <replaceMapGeneration>False</replaceMapGeneration>
+          <disdestroyBecauseOfNoColonist>False</disdestroyBecauseOfNoColonist>
+          <storeAs>Dungeon</storeAs>
+          <faction>BotchJob_ProfanedFaction</faction>
+          <distance>
+            <min>5</min>
+            <max>10</max>
+          </distance>
+          <blacklist />
+        </li>
+        <li Class="RimWorld.QuestGen.QuestNode_Signal">
+          <inSignal>Dungeon.Destroyed</inSignal>
+          <node Class="RimWorld.QuestGen.QuestNode_Sequence">
+            <nodes>
+              <li Class="RimWorld.QuestGen.QuestNode_End">
+                <outcome>Success</outcome>
+              </li>
+              <li Class="RimWorld.QuestGen.QuestNode_Letter">
+                <letterDef>PositiveEvent</letterDef>
+                <label>The tomb has been destroyed.</label>
+                <text>The tomb of the profaned has been destroyed by an outside force.</text>
+              </li>
+            </nodes>
+          </node>
+        </li>
+      </nodes>
+    </root>
+    <rootSelectionWeight>0.6</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <rootMinProgressScore>0</rootMinProgressScore>
+    <rootIncreasesPopulation>False</rootIncreasesPopulation>
+    <minRefireDays>0</minRefireDays>
+    <decreeSelectionWeight>0</decreeSelectionWeight>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription -&gt; A nearby profaned tomb has been detected.</li>
+      </rulesStrings>
+      <rulesFiles />
+      <rulesRaw IsNull="True" />
+      <include IsNull="True" />
+    </questDescriptionRules>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName -&gt; The profaned tomb</li>
+      </rulesStrings>
+      <rulesFiles />
+      <rulesRaw IsNull="True" />
+      <include IsNull="True" />
+    </questNameRules>
+    <autoAccept>True</autoAccept>
+    <hideOnCleanup>False</hideOnCleanup>
+    <expireDaysRange>
+      <min>-1</min>
+      <max>-1</max>
+    </expireDaysRange>
+    <nameMustBeUnique>False</nameMustBeUnique>
+    <defaultChallengeRating>-1</defaultChallengeRating>
+    <defaultHidden>False</defaultHidden>
+    <isRootSpecial>True</isRootSpecial>
+    <canGiveRoyalFavor>False</canGiveRoyalFavor>
+    <hideInvolvedFactionsInfo>False</hideInvolvedFactionsInfo>
+    <affectedByPopulation>False</affectedByPopulation>
+    <affectedByPoints>True</affectedByPoints>
+    <defaultCharity>False</defaultCharity>
+    <sendAvailableLetter>False</sendAvailableLetter>
+    <epic>False</epic>
+    <endOnColonyMove>True</endOnColonyMove>
+    <defName>PE_Quest_Tomb</defName>
+    <ignoreConfigErrors>False</ignoreConfigErrors>
+    <ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>
+  </QuestScriptDef>
+</Defs>

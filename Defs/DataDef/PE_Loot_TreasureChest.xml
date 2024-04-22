@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_TreasureChest</defName>
+    <loots>
+      <li>
+        <dataName>Unnamed</dataName>
+        <chance>0.8</chance>
+        <things>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>2~4</count>
+            <thing>BotchJob_SoulGem</thing>
+          </li>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>2~4</count>
+            <thing>BotchJob_Bloodstone</thing>
+          </li>
+        </things>
+      </li>
+      <li>
+        <dataName>Unnamed</dataName>
+        <chance>0.3</chance>
+        <things>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>2~3</count>
+            <thing>BotchJob_ProfaneFuryPotion</thing>
+          </li>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>2~3</count>
+            <thing>BotchJob_ProfaneHealingPotion</thing>
+          </li>
+        </things>
+      </li>
+      <li>
+        <dataName>Unnamed</dataName>
+        <chance>0.1</chance>
+        <things>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>25~50</count>
+            <thing>BotchJob_CorruptedBlood</thing>
+          </li>
+        </things>
+      </li>
+    </loots>
+  </QuestEditor_Library.LootDataDef>
+</Defs>

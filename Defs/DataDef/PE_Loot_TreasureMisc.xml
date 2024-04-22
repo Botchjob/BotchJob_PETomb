@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_TreasureWeapon</defName>
+    <loots>
+          <li>
+            <dataName>Sword</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_GraspingDeadGreatsword</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Axe</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_FrostboundGreataxe</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Scythe</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_FadingSoulScythe</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Staff</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_BloodflameStaff</thing>
+              </li>
+            </things>
+          </li>
+        </loots>
+  </QuestEditor_Library.LootDataDef>
+  
+   <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_Enemies</defName>
+    <loots>
+          <li>
+            <dataName>Creature</dataName>
+            <chance>0.5</chance>
+            <pawnDatas>
+              <li>
+                <dataName>Ghoul</dataName>
+                <kind>BotchJob_Ghoul</kind>
+                <count>1~2</count>
+                <faction>BotchJob_ProfanedFaction</faction>
+                <spawnType>MapGeneration</spawnType>
+              </li>
+              <li>
+                <dataName>Wraith</dataName>
+                <kind>BotchJob_Wraith</kind>
+                <count>1~2</count>
+                <faction>BotchJob_ProfanedFaction</faction>
+                <spawnType>MapGeneration</spawnType>
+              </li>
+            </pawnDatas>
+          </li>
+        </loots>
+  </QuestEditor_Library.LootDataDef>
+
+  
+  <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_Items</defName>
+    <loots>
+          <li>
+            <dataName>Orb</dataName>
+            <chance>0.3</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~3</count>
+                <thing>BotchJob_WraithOrb</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Bloodstone</dataName>
+            <chance>0.3</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~3</count>
+                <thing>BotchJob_Bloodstone</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Gem</dataName>
+            <chance>0.3</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~3</count>
+                <thing>BotchJob_SoulGem</thing>
+              </li>
+            </things>
+          </li>
+        </loots>
+  </QuestEditor_Library.LootDataDef>
+  
+ <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_Potions</defName>
+    <loots>
+          <li>
+            <dataName>Fury</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~2</count>
+                <thing>BotchJob_ProfaneFuryPotion</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Healing</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~2</count>
+                <thing>BotchJob_ProfaneHealingPotion</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Charisma</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~2</count>
+                <thing>BotchJob_ProfaneCharismaPotion</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Haste</dataName>
+            <chance>0.2</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~2</count>
+                <thing>BotchJob_ProfaneHastePotion</thing>
+              </li>
+            </things>
+          </li>
+        </loots>
+  </QuestEditor_Library.LootDataDef>
+  
+  <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_Apparel</defName>
+    <loots>
+          <li>
+            <dataName>Armor</dataName>
+            <chance>0.3</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_ScourgeknightArmor</thing>
+              </li>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_ScourgeknightHelmet</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Robe</dataName>
+            <chance>0.3</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_GravetenderRobes</thing>
+              </li>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_BoneCrown</thing>
+              </li>
+            </things>
+          </li>
+          <li>
+            <dataName>Cloak</dataName>
+            <chance>0.5</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>1~1</count>
+                <thing>BotchJob_ProfanedCloak</thing>
+              </li>
+            </things>
+          </li>
+        </loots>
+  </QuestEditor_Library.LootDataDef>
+  
+  <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_LordorGold</defName>
+    <loots>
+          <li>
+            <dataName>Lord</dataName>
+            <chance>0.5</chance>
+            <pawnDatas>
+              <li>
+                <dataName>Lord</dataName>
+                <kind>BotchJob_ScourgeLord</kind>
+                <count>1~1</count>
+                <faction>BotchJob_ProfanedFaction</faction>
+                <spawnType>MapGeneration</spawnType>
+              </li>
+            </pawnDatas>
+          </li>
+          <li>
+            <dataName>Gold</dataName>
+            <chance>0.5</chance>
+            <things>
+              <li Class="QuestEditor_Library.CQFThingDefCount">
+                <count>100~400</count>
+                <thing>Gold</thing>
+              </li>
+            </things>
+          </li>
+        </loots>
+  </QuestEditor_Library.LootDataDef>
+
+  
+</Defs>

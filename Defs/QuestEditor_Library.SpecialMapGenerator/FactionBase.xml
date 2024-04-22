@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <QuestEditor_Library.SpecialMapGenerationDef>        <!-- Replace faction settlement generation -->
+        <defName>PE_FactionReplace</defName>
+        <factionOfReplacedSettlement>BotchJob_ProfanedFaction</factionOfReplacedSettlement>        <!-- Replaced faction -->
+        <customMapDatasToReplace>            <!-- custom map data -->
+            <PE_ProfandedTombI>0.5</PE_ProfandedTombI>
+            <PE_ProfandedTombII>0.5</PE_ProfandedTombII>
+			<BotchJob_PE_ProfanedTomb>0.5</BotchJob_PE_ProfanedTomb>
+			<BotchJob_PE_ProfanedTombII>0.5</BotchJob_PE_ProfanedTombII>
+        </customMapDatasToReplace>
+    </QuestEditor_Library.SpecialMapGenerationDef>
+
+</Defs>

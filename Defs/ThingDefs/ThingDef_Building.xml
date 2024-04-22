@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="CustomToolBase">
+        <defName>PE_TreasureChest</defName>
+        <label>skeleton chest</label>
+        <description>A treasure chest with a skull engraved into it, the insignia of the profaned.</description>
+        <thingClass>QuestEditor_Library.LootBox</thingClass>
+        <category>Building</category>
+        <rotatable>false</rotatable>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/LootBox/SkeletonChest/SkeletonChest</texPath>
+            <drawOffset>0,0,0.2</drawOffset>
+            <drawSize>1.45</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <costStuffCount>35</costStuffCount>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <building>
+            <expandHomeArea>true</expandHomeArea>
+            <claimable>true</claimable>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="CustomThingBase">
+        <defName>PE_ProfanedTable</defName>
+        <label>profaned table</label>
+        <description>A heavy, stone table in the style of the Profaned. Can be used as a surface for eating by those who don't mind the skulls.</description>
+        <thingClass>QuestEditor_Library.LootBox</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/ProfanedTable2x2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Mass>10</Mass>
+            <Beauty>1</Beauty>
+        </statBases>
+        <useHitPoints>true</useHitPoints>
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>42</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <canOverlapZones>false</canOverlapZones>
+        <costStuffCount>50</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+            <li>BotchJob_ProfanedBasics</li>
+        </researchPrerequisites>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <surfaceType>Eat</surfaceType>
+        <uiOrder>2300</uiOrder>
+        <comps>
+            <li>
+                <compClass>CompGatherSpot</compClass>
+            </li>
+        </comps>
+        <building>
+            <paintable>true</paintable>
+            <buildingTags>
+                <li>RitualFocus</li>
+            </buildingTags>
+        </building>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <placeWorkers>
+            <li>PlaceWorker_RitualFocus</li>
+        </placeWorkers>
+
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestEditor_Library.LootDataDef>
+    <defName>PE_Loot_Sarcophagus</defName>
+    <loots>
+      <li>
+        <dataName>Unnamed</dataName>
+        <chance>0.8</chance>
+        <categorys>
+          <li Class="QuestEditor_Library.CQFThingCategoryCount">
+            <count>1~1</count>
+            <category>Weapons</category>
+          </li>
+          <li Class="QuestEditor_Library.CQFThingCategoryCount">
+            <count>1~1</count>
+            <category>ApparelNoble</category>
+          </li>
+        </categorys>
+      </li>
+      <li>
+        <dataName>Unnamed</dataName>
+        <chance>0.5</chance>
+        <things>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>1~1</count>
+            <thing>BotchJob_ColossusHeart</thing>
+          </li>
+        </things>
+      </li>
+      <li>
+        <dataName>50</dataName>
+        <chance>0.2</chance>
+        <things>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>1~1</count>
+            <thing>BotchJob_ScourgeknightHelmet</thing>
+          </li>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>1~1</count>
+            <thing>BotchJob_ScourgeknightArmor</thing>
+          </li>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>1~1</count>
+            <thing>BotchJob_BoneCrown</thing>
+          </li>
+          <li Class="QuestEditor_Library.CQFThingDefCount">
+            <count>1~1</count>
+            <thing>BotchJob_GraspingDeadGreatsword</thing>
+          </li>
+        </things>
+      </li>
+    </loots>
+  </QuestEditor_Library.LootDataDef>
+</Defs>
